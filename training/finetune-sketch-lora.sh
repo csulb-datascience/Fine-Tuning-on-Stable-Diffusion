@@ -1,4 +1,4 @@
-export MODEL_NAME="runwayml/stable-diffusion-v1-5"
+export MODEL_NAME="CompVis/stable-diffusion-v1-1"
 export OUTPUT_DIR="trained_models/sd-1-5-sketch-lora"
 export HUB_MODEL_ID="jordanhilado/sd-1-5-sketch-lora"
 export DATASET_NAME="zoheb/sketch-scene"

@@ -1,0 +1,6 @@
+# Environments
+.venv
+
+# Examples
+/training/generated_images
+/training/trained_models

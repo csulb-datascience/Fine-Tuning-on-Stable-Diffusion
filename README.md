@@ -4,8 +4,8 @@
 
 ### Installing the dependencies
 
-1. Clone repo: `git clone https://github.com/jordanhilado/sd-diffusers-fine-tuning.git`
-2. Start a virtual environment of your choice. *Recommended: [conda](https://docs.conda.io/en/latest/)* 
+1. Clone repo: `git clone https://github.com/csulb-datascience/Fine-Tuning-on-Stable-Diffusion.git`
+2. Start a virtual environment of your choice. _Recommended: [conda](https://docs.conda.io/en/latest/)_
 3. Install Python packages: `pip install -r requirements.txt`
 4. Configure your training environment: `accelerate config`
 5. Login to your HuggingFace account: `huggingface-cli login`

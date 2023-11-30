@@ -14,9 +14,14 @@ prompts = {
         "A sketch of a scene of two walking zebras in a jungle",
         "Green Arc'teryx jacket with a hood and a white logo on the front",
     ],
+    2: [
+        "A green pokemon fish with big eyes",
+        "A sketch of a scene of an airplane flying in the air",
+        "A Levi's orange vest with a zipper and collar",
+    ],
 }
 
-prompt_choice = 1
+prompt_choice = 2
 
 models = {
     0: {
@@ -52,7 +57,11 @@ models = {
 }
 
 for _, data in models.items():
-    lora_model_id, prompt, output_file = data["name"], data["prompt"], data["output_file"]
+    lora_model_id, prompt, output_file = (
+        data["name"],
+        data["prompt"],
+        data["output_file"],
+    )
 
     def filename(scale):
         return f"{output_file}-scale-{scale}.png"
@@ -60,7 +69,9 @@ for _, data in models.items():
     card = RepoCard.load(lora_model_id)
     base_model_id = card.data.to_dict()["base_model"]
 
-    pipe = StableDiffusionPipeline.from_pretrained(base_model_id, torch_dtype=torch.float16, safety_checker=None)
+    pipe = StableDiffusionPipeline.from_pretrained(
+        base_model_id, torch_dtype=torch.float16, safety_checker=None
+    )
     pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 
     pipe.unet.load_attn_procs(lora_model_id)
@@ -81,7 +92,10 @@ for _, data in models.items():
         scale_collage = Image.new("RGB", (1024, 1024))
         for i in range(4):
             image = pipe(
-                prompt, num_inference_steps=25, guidance_scale=7.5, cross_attention_kwargs={"scale": scale}
+                prompt,
+                num_inference_steps=25,
+                guidance_scale=7.5,
+                cross_attention_kwargs={"scale": scale},
             ).images[0]
             scale_collage.paste(image, crop[i])
         scale_collage.save("generated_images/" + filename(scale))

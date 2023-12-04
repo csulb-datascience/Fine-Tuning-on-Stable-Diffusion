@@ -22,7 +22,7 @@ Datasets:
 - W&B Training Instance: [sd-1-1-pokemon-lora](https://wandb.ai/jordanalihilado/text2image-fine-tune/runs/knm903a5/overview?workspace=user-jordanalihilado)
 - Hugging Face Model: [jordanhilado/sd-1-1-pokemon-lora](https://huggingface.co/jordanhilado/sd-1-1-pokemon-lora)
 
-| Prompt                                                                | Pretrained                                                                                    | Trained                                                                                       |
+| Prompt                                                                | Pretrained                                                                                    | Fine-tuned                                                                                    |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | "A pokemon red and white cartoon ball with an angry look on its face" | <img src="assets/prompt-0/1-1-pokemon-scale-0.png" alt="p0-1-1-pokemon-scale-0" width="300"/> | <img src="assets/prompt-0/1-1-pokemon-scale-1.png" alt="p0-1-1-pokemon-scale-1" width="300"/> |
 | "A blue dragon pokemon flying through the air"                        | <img src="assets/prompt-1/1-1-pokemon-scale-0.png" alt="p1-1-1-pokemon-scale-0" width="300"/> | <img src="assets/prompt-1/1-1-pokemon-scale-1.png" alt="p1-1-1-pokemon-scale-1" width="300"/> |
@@ -33,7 +33,7 @@ Datasets:
 - W&B Training Instance: [sd-1-1-sketch-lora](https://wandb.ai/jordanalihilado/text2image-fine-tune/runs/37nuy63x/overview?workspace=user-jordanalihilado)
 - Hugging Face Model: [jordanhilado/sd-1-1-sketch-lora](https://huggingface.co/jordanhilado/sd-1-1-sketch-lora)
 
-| Prompt                                                  | Pretrained                                                                                  | Trained                                                                                     |
+| Prompt                                                  | Pretrained                                                                                  | Fine-tuned                                                                                  |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | "A sketch of a scene with a tree and a house"           | <img src="assets/prompt-0/1-1-sketch-scale-0.png" alt="p0-1-1-sketch-scale-0" width="300"/> | <img src="assets/prompt-0/1-1-sketch-scale-1.png" alt="p0-1-1-sketch-scale-1" width="300"/> |
 | "A sketch of a scene of two walking zebras in a jungle" | <img src="assets/prompt-1/1-1-sketch-scale-0.png" alt="p1-1-1-sketch-scale-0" width="300"/> | <img src="assets/prompt-1/1-1-sketch-scale-1.png" alt="p1-1-1-sketch-scale-1" width="300"/> |
@@ -44,7 +44,7 @@ Datasets:
 - W&B Training Instance: [sd-1-1-kream-lora](https://wandb.ai/jordanalihilado/text2image-fine-tune/runs/0i86earc/overview?workspace=user-jordanalihilado)
 - Hugging Face Model: [jordanhilado/sd-1-1-kream-lora](https://huggingface.co/jordanhilado/sd-1-1-kream-lora)
 
-| Prompt                                                             | Pretrained                                                                                | Trained                                                                                   |
+| Prompt                                                             | Pretrained                                                                                | Fine-tuned                                                                                |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | "A black nike jacket with a hoodie and zipper"                     | <img src="assets/prompt-0/1-1-kream-scale-0.png" alt="p0-1-1-kream-scale-0" width="300"/> | <img src="assets/prompt-0/1-1-kream-scale-1.png" alt="p0-1-1-kream-scale-1" width="300"/> |
 | "Green Arc'teryx jacket with a hood and a white logo on the front" | <img src="assets/prompt-1/1-1-kream-scale-0.png" alt="p1-1-1-kream-scale-0" width="300"/> | <img src="assets/prompt-1/1-1-kream-scale-1.png" alt="p1-1-1-kream-scale-1" width="300"/> |

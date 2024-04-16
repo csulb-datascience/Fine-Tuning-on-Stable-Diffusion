@@ -1,5 +1,8 @@
 # Comparative Study of Text-to-Image Models: A Focus on Subject-Specific Training for Improved Generation
 
+ScholarWorks: https://scholarworks.calstate.edu/concern/projects/pz50h376p
+Google Scholar: https://rb.gy/0pnc5r
+
 ## Running locally
 
 ### Installing the dependencies
